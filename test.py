@@ -3,8 +3,8 @@ import yt_dlp
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "your-telegram-bot-token"
-CHANNEL = "@YourChannel"
+TOKEN = "8198686578:AAFDpwqt7yzTmH_KzXGZG-HBKhpDy5hOTxg"
+CHANNEL = "@TamerkhanBlog"
 
 # Video yuklash
 async def download_video(url, message, context, user_id):
@@ -52,3 +52,4 @@ if __name__ == '__main__':
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     print("Bot ishga tushdi...")
     app.run_polling()
+
